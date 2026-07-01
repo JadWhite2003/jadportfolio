@@ -189,7 +189,7 @@ export const contactInfo = [
     {
         icon: Phone,
         label: "Phone",
-        value: "+44 123 456 7890",
+        value: "+44 Message me first!",
         href: "tel:+441234567890"
     },
     {

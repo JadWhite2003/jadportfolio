@@ -3,6 +3,15 @@
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
+type SparklesCoreProps = {
+  className?: string
+  background?: string
+  minSize?: number
+  maxSize?: number
+  particleDensity?: number
+  particleColor?: string
+}
+
 export const SparklesCore = ({
   className,
   background = "transparent",
@@ -10,7 +19,7 @@ export const SparklesCore = ({
   maxSize = 1.2,
   particleDensity = 1200,
   particleColor = "#FFFFFF",
-}) => {
+}: SparklesCoreProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
