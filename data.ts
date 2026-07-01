@@ -16,7 +16,7 @@ export const footerSocials = [
 
 export const projects = [
     {
-        title: "Devularity",
+        title: "Devularity (WIP)",
         description: "A curated suite of productivity apps that seamlessly connect together",
         image: "/images/placeholder.png",
         technologies: ["React", "Flutter", "TailwindCSS", "Supabase", "MySQL"],
@@ -25,7 +25,7 @@ export const projects = [
         featured: true,
     },
     {
-        title: "DEVonance",
+        title: "DEVonance (WIP)",
         description: "A small application that allows users to quickly share files, images and text with their devices",
         image: "/images/placeholder.png",
         technologies: ["React", "Next.js", "TailwindCSS", "Python", "FastAPI"],
@@ -34,7 +34,7 @@ export const projects = [
         featured: false,
     },
     {
-        title: "MouseRing",
+        title: "MouseRing (WIP)",
         description: "A desktop app that allows a custom ring with shortcuts displayed around the mouse cursor, for quick access to shortcuts and actions",
         image: "/images/placeholder.png",
         technologies: ["React", "Next.js", "TailwindCSS"],
@@ -43,7 +43,7 @@ export const projects = [
         featured: false,
     },
     {
-        title: "BigBangButtons(BBB)",
+        title: "BigBangButtons(BBB) (WIP)",
         description: "A collection of customizable buttons for quick access to frequently used applications, files, and websites that will open all at once",
         image: "/images/placeholder.png",
         technologies: ["React",],
@@ -52,7 +52,7 @@ export const projects = [
         featured: false,
     },
     {
-        title: "The Clocktower",
+        title: "The Clocktower (WIP)",
         description: "A fully functional watch e-commerce store with working payments and content management systems",
         image: "/images/placeholder.png",
         technologies: ["React", "Next.js", "Stripe", "TailwindCSS", "Supabase"],
@@ -61,7 +61,7 @@ export const projects = [
         featured: false,
     },
     {
-        title: "AIment",
+        title: "AIment (WIP)",
         description: "A conference of AI's with assignable roles, where they interact with both the user an each other to create the users desired output",
         image: "/images/placeholder.png",
         technologies: ["React", "Next.js", "TailwindCSS", "AI"],
