@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import {projects} from '@/data'
+import { projects } from '@/data'
 import { Spotlight } from '@/components/ui/spotlight'
 
 const ProjectsPage = () => {
@@ -10,20 +10,39 @@ const ProjectsPage = () => {
       <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen dark:fill-white" />
       <Spotlight className="top-10 -left-full  h-[80vh] w-[50vw] dark:fill-purple" />
       <Spotlight className="top-28 -left-10  h-[80vh] w-[50vw] dark:fill-blue" />
-      <div className="relative z-10">
-        <div className="text-center mb-12 space-y-3">
-          <h1 className="text-4xl font-bold">My Projects</h1>
-          <p className="text-white/70">See all the things I'm working on</p>
-        </div>
+      {/* Scrolling divider */}
+      <div className='relative'>
+        <div className="absolute inset-0 overflow-hidden -z-10 pointer-events-none">
+          <div className=' animate-scrollVertical flex flex-col gap-16'>
+            <span className='font-bold text-9xl text-white/20'>Technical</span>
+            <span className='font-bold text-9xl text-white/20'>Well Coded</span>
+            <span className='font-bold text-9xl text-white/20'>Industry Level</span>
+            <span className='font-bold text-9xl text-white/20'>New Ideas</span>
 
-        <div className="grid justify-items-center gap-y-3 gap-x-0 grid-cols-[repeat(auto-fit,minmax(18rem,1fr))]">
-          {projects.map((project, index) => (
-            <div key={index} className="w-[18rem]">
-              <ProjectCard {...project} />
-            </div>
-          ))}
+            {/*seamless animation*/}
+            <span className='font-bold text-9xl text-white/20'> Technical </span>
+            <span className='font-bold text-9xl text-white/20'> Well Coded </span>
+            <span className='font-bold text-9xl text-white/20 '> Industry Level </span>
+            <span className='font-bold text-9xl text-white/20'> New Ideas </span>
+
+          </div>
+        </div>
+        <div className="relative z-10">
+          <div className="text-center mb-12 space-y-3">
+            <h1 className="text-4xl font-bold">My Projects</h1>
+            <p className="text-white/70">See all the things I'm working on</p>
+          </div>
+
+          <div className="grid justify-items-center gap-y-3 gap-x-0 grid-cols-[repeat(auto-fit,minmax(18rem,1fr))]">
+            {projects.map((project, index) => (
+              <div key={index} className="w-[18rem]">
+                <ProjectCard {...project} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
     </div>
   );
 };

@@ -11,19 +11,19 @@ const About = () => {
                 <div className="space-y-6">
                     <h2 className="text-4xl font-bold"> About Me </h2>
                     <p className="text-white/80 leading-relaxed">
-                        Hey there 👋🏻 I'm Jadon White, a passionate software engineer dedicated to crafting
-                        exceptional digital experiences that leave a lasting impact.
+                        Hey there 👋🏻 I'm Jadon White, a passionate software engineer wanting to leave their mark and create useful applications.
                     </p>
 
                     <p className="text-white/80 leading-relaxed">
-                        My journey into technology began with childhood curiosity — from assembling LEGO
-                        spaceships to architecting software solutions today.
+                        My journey into technology began with gaming, I loved seeing how my input affected the game world which made me curious about how things work under the hood of software, apps and websites.
                     </p>
 
                     <p className="text-white/80 leading-relaxed">
-                        I'm constantly pushing the boundaries of my expertise, exploring new technologies,
-                        and building solutions that make a difference.
+                        I love discovering new technologies and tools that allow me to create and innovate. Programming has become my passion as it has given me the ability to bring my ideas to life and make a positive impact on the world.
                     </p>
+                    <p className="text-white/80 leading-relaxed"> "Atleast the stars will remember the shape I gave them"</p>
+                    <p className='text-white/80 italic'>- Oryx Taken King</p>
+                    
 
                 </div>
                 {/* About me image right side and socials*/}
@@ -63,7 +63,7 @@ const About = () => {
                     <span className='font-bold text-9xl text-white/20'> Creative </span>
                     <span className='font-bold text-9xl text-white/20'> Deep Thinker </span>
 
-                    {'seamless animation'}
+                    {/*seamless animation*/}
                     <span className='font-bold text-9xl text-white/20'> Problem Solver </span>
                     <span className='font-bold text-9xl text-white/20'> Gamer </span>
                     <span className='font-bold text-9xl text-white/20 '> Creative </span>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { skills } from '@/data'
+import TimelineColumn from './timelineColumn'
+import { education, experiences } from '@/data'
 
 const Hire = () => {
     return (
@@ -52,16 +54,19 @@ const Hire = () => {
 
                 </div>
             </div>
-            {/*skills and education */}
+            {/*Experience and education */}
             <div>
-                <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch">
+                    {/* Education */}
                     <div>
                         <h2 className='font-bold text-3xl'>My Education</h2>
+                        <TimelineColumn items={education} />
 
                     </div>
+                    {/* Experience */}
                     <div>
                         <h2 className='font-bold text-3xl'>My Experience</h2>
-
+                        <TimelineColumn items={experiences} />
                     </div>
 
                 </div>

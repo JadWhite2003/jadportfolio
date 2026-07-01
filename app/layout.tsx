@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Provider from "@/components/Hoc/Provider";
 import ResponsiveNav from "@/components/Navbar/ResponsiveNav";
+import Footer from "./footer/footer";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Provider>
           <ResponsiveNav />
           {children}
+          <Footer />
         </Provider>
       </body>
     </html>
