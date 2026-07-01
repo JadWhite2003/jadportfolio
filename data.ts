@@ -132,6 +132,14 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "Software Developer",
+        company: "Self-Employed",
+        duration: "2023 - Present",
+        description: " Developing productivity apps used by 100+ users, handling bug reports and feedback, Creating and maintaining APIs and databases, Managing sensitive user data, Creating CI/CD pipelines to automate testing, Working with and creating AI tools to increase productivity, reduce repetitiion and for quick iteration and planning.",
+        technologies: ["Test", "Test"],
+
+    },
+    {
         title: "IT Support Technician",
         company: "No Problem IT",
         duration: "2021 - 2022",
