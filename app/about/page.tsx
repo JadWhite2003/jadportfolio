@@ -2,6 +2,7 @@ import { socials } from '@/data'
 import { Icon } from 'lucide-react'
 import React from 'react'
 import { Spotlight } from '@/components/ui/spotlight'
+import Image from 'next/image'
 
 const About = () => {
     return (
@@ -29,7 +30,7 @@ const About = () => {
                 {/* About me image right side and socials*/}
                 <div className='flex flex-col items-center gap-6'>
                     <div>
-                        <img src="/images/profile.png" alt="Jadon White" className="rounded-full w-full h-full object-cover" />
+                        <Image src="/images/profile.jpeg" width={480} height={480} alt="Jadon White" className="rounded-full w-full h-full object-cover" />
                     </div>
                     <div className='flex flex-wrap gap-4 justify-center'>
                         {socials.map(({ icon: Icon, href, label }) => (

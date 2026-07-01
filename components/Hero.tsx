@@ -4,6 +4,7 @@ import { Spotlight } from './ui/spotlight'
 import { SparklesCore } from './ui/sparkles'
 import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
 
 
 const Hero = () => {
@@ -12,24 +13,24 @@ const Hero = () => {
             <div className="absolute left-0 top-1/2 -translate-y-1/2 h-[60rem] w-[34rem] overflow-hidden">
                 {/* Tech stack logos scrolling */}
                 <div className="flex flex-col gap-6 animate-scrollVertical px-6 hidden md:block">
-                    <img src="/logos/react.svg" alt="React" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/javascript.svg" alt="JavaScript" className="w-[30rem] h-[30rem] opacity-25 filter filter invert-0 dark:invert  p-4" />
-                    <img src="/logos/typescript.svg" alt="TypeScript" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert  p-4" />
-                    <img src="/logos/python.svg" alt="Python" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/node.svg" alt="Node.js" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/tailwind.svg" alt="Tailwind CSS" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/next.svg" alt="Next.js" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/mysql.svg" alt="MySQL" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/react.svg" alt="React" width={480} height={480} className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/javascript.svg" width={480} height={480} alt="JavaScript" className=" opacity-25 filter filter invert-0 dark:invert  p-4" />
+                    <Image src="/logos/typescript.svg" width={480} height={480} alt="TypeScript" className=" opacity-25 filter invert-0 dark:invert  p-4" />
+                    <Image src="/logos/python.svg" width={480} height={480} alt="Python" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/node.svg" width={480} height={480} alt="Node.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/tailwind.svg" width={480} height={480} alt="Tailwind CSS" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/next.svg" width={480} height={480} alt="Next.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/mysql.svg" width={480} height={480} alt="MySQL" className=" opacity-25 filter invert-0 dark:invert p-4" />
 
                     {/* Duplicate for seamless loop */}
-                    <img src="/logos/react.svg" alt="React" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/javascript.svg" alt="JavaScript" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/typescript.svg" alt="TypeScript" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/python.svg" alt="Python" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/node.svg" alt="Node.js" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/tailwind.svg" alt="Tailwind CSS" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/next.svg" alt="Next.js" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
-                    <img src="/logos/mysql.svg" alt="MySQL" className="w-[30rem] h-[30rem] opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/react.svg" width={480} height={480} alt="React" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/javascript.svg" width={480} height={480} alt="JavaScript" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/typescript.svg" width={480} height={480} alt="TypeScript" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/python.svg" width={480} height={480} alt="Python" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/node.svg" width={480} height={480} alt="Node.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/tailwind.svg" width={480} height={480} alt="Tailwind CSS" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/next.svg" width={480} height={480} alt="Next.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                    <Image src="/logos/mysql.svg" width={480} height={480} alt="MySQL" className=" opacity-25 filter invert-0 dark:invert p-4" />
                 </div>
             </div>
 

@@ -25,7 +25,7 @@ export const projects = [
         featured: true,
     },
     {
-        title: "Devonance",
+        title: "DEVonance",
         description: "A small application that allows users to quickly share files, images and text with their devices",
         image: "/images/placeholder.png",
         technologies: ["React", "Next.js", "TailwindCSS", "Python", "FastAPI"],
