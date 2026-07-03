@@ -64,7 +64,7 @@ const Hero = () => {
                     />
                 </div>
                 
-                <div className="w-[40rem] h-60 relative rounded-2xl overflow-hidden mx-auto">
+                <div className="w-full max-w-[40rem] h-60 relative rounded-2xl overflow-hidden mx-auto">
                     {/* Sparkle Gradients */}
                     <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                     <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
@@ -74,9 +74,9 @@ const Hero = () => {
                     {/* Core component */}
                     <SparklesCore
                         background="transparent"
-                        minSize={0.4}
-                        maxSize={2}
-                        particleDensity={1200}
+                        minSize={0.25}
+                        maxSize={1.4}
+                        particleDensity={1400}
                         className="w-full h-full z-10 rounded-2xl"
                         particleColor="#FFFFFF"
                     />
@@ -87,7 +87,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute right-30 top-70 -translate-y-1/2 hidden md:block">
+            <div className="absolute right-30 top-70 -translate-y-1/2 hidden md:hidden lg:block">
                 <Link
                     href="/projects"
                     className="
