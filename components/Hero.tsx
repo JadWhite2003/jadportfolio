@@ -103,9 +103,9 @@ const Hero = () => {
                 </Link>
             </div>
             <div>
-                <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen dark:fill-white" />
-                <Spotlight className="top-10 -left-full  h-[80vh] w-[50vw] dark:fill-purple" />
-                <Spotlight className="top-28 -left-10  h-[80vh] w-[50vw] dark:fill-blue" />
+                <Spotlight className="-top-40 hidden md:block -left-10 md:-left-32 md:-top-20 h-screen dark:fill-white" />
+                <Spotlight className="top-10 hidden md:block -left-full  h-[80vh] w-[50vw] dark:fill-purple" />
+                <Spotlight className="top-28 hidden md:block -left-10  h-[80vh] w-[50vw] dark:fill-blue" />
 
             </div>
         </div>

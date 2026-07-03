@@ -28,7 +28,7 @@ export const projects = [
         title: "DEVonance (WIP)",
         description: "A small application that allows users to quickly share files, images and text with their devices",
         image: "/images/placeholder.png",
-        technologies: ["React", "Next.js", "TailwindCSS", "Python", "FastAPI"],
+        technologies: ["React", "Next.js", "TailwindCSS", "Python", "FastAPI", "Redis", "CloudflareR2", "Plasmo", "RNative"],
         github: "https://github.com/JadWhite2003",
         demo: "https://github.com/JadWhite2003",
         featured: false,
@@ -71,16 +71,6 @@ export const projects = [
     },
 ]
 
-export const legacyProjects = [
-    {
-        title: "Test",
-        description: "Test",
-        image: "/images/test.png",
-        technologies: ["React", "Next.js", "TailwindCSS"],
-        github: "https://github.com/JadWhite2003",
-        demo: "",
-    },
-]
 
 export const skills = [
     {

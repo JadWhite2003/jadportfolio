@@ -41,16 +41,16 @@ const Hire = () => {
             {/* Scrolling divider */}
             <div className='relative overflow-hidden'>
                 <div className='animate-scrollHorizontal flex flex-nowrap whitespace-nowrap gap-16'>
-                    <span className='font-bold text-9xl text-white/20'> Communication </span>
-                    <span className='font-bold text-9xl text-white/20'> Teamwork </span>
-                    <span className='font-bold text-9xl text-white/20'> Problem-Solving </span>
-                    <span className='font-bold text-9xl text-white/20'> Time management </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Communication </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Teamwork </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Problem-Solving </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Time management </span>
 
                     {'seamless animation'}
-                    <span className='font-bold text-9xl text-white/20'> Communication </span>
-                    <span className='font-bold text-9xl text-white/20'> Teamwork </span>
-                    <span className='font-bold text-9xl text-white/20'> Problem-Solving </span>
-                    <span className='font-bold text-9xl text-white/20'> Time management </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Communication </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Teamwork </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Problem-Solving </span>
+                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Time management </span>
 
                 </div>
             </div>

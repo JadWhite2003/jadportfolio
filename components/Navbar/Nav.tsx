@@ -5,6 +5,7 @@ import { Navlinks } from '@/Constant/constant'
 import Link from 'next/link'
 import { Download, MenuIcon, Type, User } from 'lucide-react'
 import ThemeToggler from '../Helper/ThemeToggler'
+import Image from 'next/image';
 
 type Props = {
     onOpen: () => void
@@ -17,8 +18,8 @@ const Nav = ({ onOpen }: Props) => {
 
   return (
     <nav className="fixed top-0 z-50 flex items-center justify-center gap-x-2 sm:gap-x-8 w-full h-16 px-6 py-4 bg-transparent transition-all">
-        <div className="flex items-center gap-4 border border-black-800 rounded-2xl px-3 py-3 shadow-xs shadow-zinc-500 dark:shadow-zinc-900/20">
-            <User className="w-4 h-4 " />
+        <div className="flex items-center gap-4 border border-black-800 rounded-2xl px-0 py-0 shadow-xs shadow-zinc-500 dark:shadow-zinc-900/20">
+            <Image src="/images/profile.jpeg" alt="Profile" width={32} height={32} className="object-cover rounded-full" />
 
         </div>
 
