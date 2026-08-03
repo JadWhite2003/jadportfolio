@@ -25,6 +25,16 @@ export const projects = [
         featured: true,
     },
     {
+        title: "ChildBeGone",
+        description: "A small application that will popup whenever keyboard spam is detected to prevent any pets or children from causing mistakes on important work",
+        image: "/images/childbegonelogo.png",
+        technologies: ["React", "Vite", "TailwindCSS", "Electron"],
+        github: "https://github.com/JadWhite2003/childbegone",
+        demo: "https://github.com/JadWhite2003/childbegone",
+        featured: false,
+    },
+
+    {
         title: "DEVonance (WIP)",
         description: "A small application that allows users to quickly share files, images and text with their devices",
         image: "/images/placeholder.png",
