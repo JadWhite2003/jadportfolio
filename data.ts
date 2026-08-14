@@ -135,7 +135,7 @@ export const experiences = [
         title: "Software Developer",
         company: "Self-Employed",
         duration: "2023 - Present",
-        description: " Developing productivity apps used by 100+ users, handling bug reports and feedback, Creating and maintaining APIs and databases, Managing sensitive user data, Creating CI/CD pipelines to automate testing, Working with and creating AI tools to increase productivity, reduce repetitiion and for quick iteration and planning.",
+        description: " Developing small productivity apps to gain experience with full-stack development. Practised iterative development by identifying bugs, refactoring code, and continuous self-led learning.Creating and maintaining APIs and databases focusing on learning secure data handling.Creating CI/CD pipelines to automatically update apps and to understand automated deployment.Working with and creating AI tools to increase productivity, accelerate learning, reduce repetition and for quick iteration and planning.",
         technologies: ["Test", "Test"],
 
     },
