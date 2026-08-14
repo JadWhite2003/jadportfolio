@@ -28,7 +28,7 @@ export const projects = [
         title: "ChildBeGone",
         description: "A small application that will popup whenever keyboard spam is detected to prevent any pets or children from causing mistakes on important work",
         image: "/images/childbgonelogo.png",
-        technologies: ["React", "Vite", "TailwindCSS", "Electron"],
+        technologies: ["React", "Vite", "TailwindCSS", "Electron", "TypeScript"],
         github: "https://github.com/JadWhite2003/childbegone",
         demo: "https://github.com/JadWhite2003/childbegone",
         featured: false,
