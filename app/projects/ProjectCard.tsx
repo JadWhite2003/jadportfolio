@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ExternalLink } from 'lucide-react'
 
 
@@ -22,7 +23,7 @@ const ProjectCard = ({ description, title, technologies, image, demo, github, fe
     ${featured ? "shadow-[0_0_30px_rgba(129,140,248,0.6)]" : ""}
   `}
         ><div className='relative h-48 overflow-hidden'>
-            <img
+            <Image
                 src={image}
                 alt={title}
                 width={400}

@@ -13,19 +13,20 @@ const ProjectsPage = () => {
       {/* Scrolling divider */}
       <div className='relative'>
         <div className="absolute inset-0 overflow-hidden -z-10 pointer-events-none">
-          <div className=' animate-scrollVertical flex flex-col gap-16'>
-            <span className='font-bold lg:text-9xl text-4xl text-white/20'>Technical</span>
-            <span className='font-bold lg:text-9xl text-4xl text-white/20'>Well Coded</span>
-            <span className='font-bold lg:text-9xl text-4xl text-white/20'>Industry Level</span>
-            <span className='font-bold lg:text-9xl text-4xl text-white/20'>New Ideas</span>
-
-            {/*seamless animation*/}
-            <span className='font-bold lg:text-9xl text-4xl text-white/20'> Technical </span>
-            <span className='font-bold lg:text-9xl text-4xl text-white/20'> Well Coded </span>
-            <span className='font-bold lg:text-9xl text-4xl text-white/20 '> Industry Level </span>
-            <span className='font-bold lg:text-9xl text-4xl text-white/20'> New Ideas </span>
-
-          </div>
+                <div className="flex w-max flex-col animate-scrollVertical">
+                    {[0, 1].map((copy) => (
+                        <div
+                            key={copy}
+                            aria-hidden={copy === 1}
+                            className="flex flex-col shrink-0 gap-16 pb-16"
+                        >
+                            <span className='font-bold text-9xl text-white/20'>Technical</span>
+                            <span className='font-bold text-9xl text-white/20'>Industry code</span>
+                            <span className='font-bold text-9xl text-white/20'>Creative</span>
+                            <span className='font-bold text-9xl text-white/20'>Functional</span>
+                        </div>
+                    ))}
+                </div>
         </div>
         <div className="relative z-10">
           <div className="text-center mb-12 space-y-3">

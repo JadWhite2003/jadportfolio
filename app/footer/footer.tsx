@@ -5,19 +5,20 @@ const Footer = () => {
   return (
     <footer className='border-t dark:bg-gray-950 bg-zinc-900/50 border-gray-200 dark:border-gray-800 py-12'>
         {/* Scrolling divider */}
-            <div className='relative overflow-hidden'>
-                <div className='animate-scrollHorizontal flex flex-nowrap whitespace-nowrap gap-16'>
-                    <span className='font-bold text-7xl text-white/20'> Footer </span>
-                    <span className='font-bold text-7xl text-white/20'> Thanks for Visiting! </span>
-                    <span className='font-bold text-7xl text-white/20'>Footer </span>
-                    <span className='font-bold text-7xl text-white/20'> Thanks for Visiting! </span>
-
-                    {/*seamless animation*/}
-                    <span className='font-bold text-7xl text-white/20'>Footer </span>
-                    <span className='font-bold text-7xl text-white/20'> Thanks for Visiting! </span>
-                    <span className='font-bold text-7xl text-white/20'>Footer </span>
-                    <span className='font-bold text-7xl text-white/20'> Thanks for Visiting! </span>
-
+            <div className="relative overflow-hidden">
+                <div className="flex w-max animate-scrollHorizontal">
+                    {[0, 1].map((copy) => (
+                        <div
+                            key={copy}
+                            aria-hidden={copy === 1}
+                            className="flex shrink-0 gap-16 pr-16"
+                        >
+                            <span className='font-bold text-9xl text-white/20'>Footer</span>
+                            <span className='font-bold text-9xl text-white/20'>Thanks for visiting!</span>
+                            <span className='font-bold text-9xl text-white/20'>Footer</span>
+                            <span className='font-bold text-9xl text-white/20'>Thanks for visiting!</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         <div className="w-[80%] mx-auto">

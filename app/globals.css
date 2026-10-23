@@ -75,7 +75,7 @@
 
 @layer utilities {
   .animate-scrollVertical {
-    animation: scrollVertical 50s linear infinite;
+    animation: scrollVertical 70s linear infinite;
   }
 }
 
@@ -90,7 +90,7 @@
 
 @layer utilities {
   .animate-scrollHorizontal {
-    animation: scrollHorizontal 60s linear infinite;
+    animation: scrollHorizontal 90s linear infinite;
   }
 }
 

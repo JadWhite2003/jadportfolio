@@ -24,7 +24,7 @@ const About = () => {
                     </p>
                     <p className="text-white/80 leading-relaxed"> "Atleast the stars will remember the shape I gave them"</p>
                     <p className='text-white/80 italic'>- Oryx Taken King</p>
-                    
+
 
                 </div>
                 {/* About me image right side and socials*/}
@@ -57,19 +57,20 @@ const About = () => {
 
             </div>
             {/* Scrolling divider */}
-            <div className='relative overflow-hidden'>
-                <div className='animate-scrollHorizontal flex flex-nowrap whitespace-nowrap gap-16'>
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Problem Solver </span>
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Gamer </span>
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Creative </span>
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Deep Thinker </span>
-
-                    {/*seamless animation*/}
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Problem Solver </span>
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Gamer </span>
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20 '> Creative </span>
-                    <span className='font-bold lg:text-9xl text-4xl text-white/20'> Deep Thinker </span>
-
+            <div className="relative overflow-hidden">
+                <div className="flex w-max animate-scrollHorizontal">
+                    {[0, 1].map((copy) => (
+                        <div
+                            key={copy}
+                            aria-hidden={copy === 1}
+                            className="flex shrink-0 gap-16 pr-16 "
+                        >
+                            <span className='font-bold text-9xl text-white/20'> Gamer</span>
+                            <span className='font-bold text-9xl text-white/20'> Creative</span>
+                            <span className='font-bold text-9xl text-white/20'> Problem-Solver</span>
+                            <span className='font-bold text-9xl text-white/20'> Time management</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

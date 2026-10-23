@@ -12,27 +12,26 @@ const Hero = () => {
         <div className="pb-20 pt-36 relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_farthest-corner_at_50.3%_47.3%,_rgba(75,108,183,0.65)_0%,_rgba(24,40,72,0.65)_100%)] backdrop-blur-md dark:bg-[radial-gradient(circle_farthest-corner_at_50.3%_47.3%,_rgba(15,23,42,0.95)_0%,_rgba(2,8,18,0.95)_100%)]">
             <div className="absolute left-0 top-1/2 -translate-y-1/2 h-[60rem] w-[34rem] overflow-hidden">
                 {/* Tech stack logos scrolling */}
-                <div className="flex flex-col gap-6 animate-scrollVertical px-6 hidden md:block">
-                    <Image src="/logos/react.svg" alt="React" width={480} height={480} className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/javascript.svg" width={480} height={480} alt="JavaScript" className=" opacity-25 filter filter invert-0 dark:invert  p-4" />
-                    <Image src="/logos/typescript.svg" width={480} height={480} alt="TypeScript" className=" opacity-25 filter invert-0 dark:invert  p-4" />
-                    <Image src="/logos/python.svg" width={480} height={480} alt="Python" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/node.svg" width={480} height={480} alt="Node.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/tailwind.svg" width={480} height={480} alt="Tailwind CSS" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/next.svg" width={480} height={480} alt="Next.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/mysql.svg" width={480} height={480} alt="MySQL" className=" opacity-25 filter invert-0 dark:invert p-4" />
-
-                    {/* Duplicate for seamless loop */}
-                    <Image src="/logos/react.svg" width={480} height={480} alt="React" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/javascript.svg" width={480} height={480} alt="JavaScript" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/typescript.svg" width={480} height={480} alt="TypeScript" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/python.svg" width={480} height={480} alt="Python" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/node.svg" width={480} height={480} alt="Node.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/tailwind.svg" width={480} height={480} alt="Tailwind CSS" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/next.svg" width={480} height={480} alt="Next.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
-                    <Image src="/logos/mysql.svg" width={480} height={480} alt="MySQL" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                <div className="md:flex w-max flex-col gap-6 animate-scrollVertical px-6 hidden">
+                    {[0, 1].map((copy) => (
+                        <div
+                            key={copy}
+                            aria-hidden={copy === 1}
+                            className="flex flex-col shrink-0 gap-16 pr-16"
+                        >
+                            <Image src="/logos/react.svg" alt="React" width={480} height={480} className=" opacity-25 filter invert-0 dark:invert p-4" />
+                            <Image src="/logos/javascript.svg" width={480} height={480} alt="JavaScript" className=" opacity-25 filter invert-0 dark:invert  p-4" />
+                            <Image src="/logos/typescript.svg" width={480} height={480} alt="TypeScript" className=" opacity-25 filter invert-0 dark:invert  p-4" />
+                            <Image src="/logos/python.svg" width={480} height={480} alt="Python" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                            <Image src="/logos/node.svg" width={480} height={480} alt="Node.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                            <Image src="/logos/tailwind.svg" width={480} height={480} alt="Tailwind CSS" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                            <Image src="/logos/next.svg" width={480} height={480} alt="Next.js" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                            <Image src="/logos/mysql.svg" width={480} height={480} alt="MySQL" className=" opacity-25 filter invert-0 dark:invert p-4" />
+                        </div>
+                    ))}
                 </div>
             </div>
+
 
             {/* Hero content */}
             <div className='relative z-10 text-center'>
@@ -63,7 +62,7 @@ const Hero = () => {
                         className="font-mono"
                     />
                 </div>
-                
+
                 <div className="w-full max-w-[40rem] h-60 relative rounded-2xl overflow-hidden mx-auto">
                     {/* Sparkle Gradients */}
                     <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -76,7 +75,7 @@ const Hero = () => {
                         background="transparent"
                         minSize={0.25}
                         maxSize={1.4}
-                        particleDensity={1400}
+                        particleDensity={90}
                         className="w-full h-full z-10 rounded-2xl"
                         particleColor="#FFFFFF"
                     />
@@ -90,15 +89,7 @@ const Hero = () => {
             <div className="absolute right-30 top-70 -translate-y-1/2 hidden md:hidden lg:block">
                 <Link
                     href="/projects"
-                    className="
-      px-6 py-3
-      rounded-2xl
-      bg-white/10 backdrop-blur-xl
-      border border-white/20
-      text-white font-medium
-      hover:bg-white/20 transition
-    "
-                >
+                    className="px-6 py-3 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 text-white font-medium hover:bg-white/20 transition">
                     View Projects →
                 </Link>
             </div>
@@ -108,8 +99,8 @@ const Hero = () => {
                 <Spotlight className="top-28 hidden md:block -left-10  h-[80vh] w-[50vw] dark:fill-blue" />
 
             </div>
-        </div>
-    )
-}
+        </div >
+            
+)}
 
 export default Hero
