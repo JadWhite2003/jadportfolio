@@ -35,12 +35,12 @@ export const projects = [
     },
 
     {
-        title: "DEVonance (WIP)",
+        title: "Devonance",
         description: "A small application that allows users to quickly share files, images and text with their devices",
-        image: "/images/placeholder.png",
-        technologies: ["React", "Next.js", "TailwindCSS", "Python", "FastAPI", "Redis", "CloudflareR2", "Plasmo", "RNative"],
+        image: "/images/filetransfer.png",
+        technologies: ["React", "Next.js", "TailwindCSS", "Python", "FastAPI"],
         github: "https://github.com/JadWhite2003",
-        demo: "https://github.com/JadWhite2003",
+        demo: "https://devonance.vercel.app/send",
         featured: false,
     },
     {
