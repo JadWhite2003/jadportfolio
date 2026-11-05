@@ -44,10 +44,10 @@ export const projects = [
         featured: false,
     },
     {
-        title: "GhostWriter (WIP)",
+        title: "Textyphus (WIP)",
         description: "A small application that stores frequently used text and allows users to quickly insert them into any application with a hotkey",
         image: "/images/placeholder.png",
-        technologies: ["React", "Next.js", "TailwindCSS"],
+        technologies: ["React", "Next.js", "TailwindCSS", "Tauri", "TypeScript", "GPT-4o-mini"],
         github: "https://github.com/JadWhite2003",
         demo: "https://github.com/JadWhite2003",
         featured: false,
