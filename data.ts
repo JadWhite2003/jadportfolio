@@ -44,6 +44,15 @@ export const projects = [
         featured: false,
     },
     {
+        title: "GhostWriter (WIP)",
+        description: "A small application that stores frequently used text and allows users to quickly insert them into any application with a hotkey",
+        image: "/images/placeholder.png",
+        technologies: ["React", "Next.js", "TailwindCSS"],
+        github: "https://github.com/JadWhite2003",
+        demo: "https://github.com/JadWhite2003",
+        featured: false,
+    },
+    {
         title: "MouseRing (WIP)",
         description: "A desktop app that allows a custom ring with shortcuts displayed around the mouse cursor, for quick access to shortcuts and actions",
         image: "/images/placeholder.png",
